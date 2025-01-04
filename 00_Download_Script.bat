@@ -23,12 +23,12 @@ rem https://github.com/VitaliyAT/CSharp_UnZip
 echo C# UnZip .Net 4.5
 if not exist UnZip.exe DownloadFile https://github.com/VitaliyAT/CSharp_UnZip/releases/download/v0.0/UnZip.exe UnZip.exe
 
-rem https://github.com/VitaliyAT/Build-Fritzing-1.0.0-Windows-script
-echo Build Fritzing 1.0.0 Windows script
-if not exist main.zip DownloadFile https://github.com/VitaliyAT/Build-Fritzing-1.0.0-Windows-script/archive/refs/heads/main.zip main.zip
+rem https://github.com/VitaliyAT/Build-Fritzing-1.0.4-Windows-script
+echo Build Fritzing 1.0.4 Windows script
+if not exist main.zip DownloadFile https://github.com/VitaliyAT/Build-Fritzing-1.0.4-Windows-script/archive/refs/heads/main.zip main.zip
 
 UnZip.exe main.zip .
 
-move Build-Fritzing-1.0.0-Windows-script-main\*.* .\
-rmdir Build-Fritzing-1.0.0-Windows-script-main
+move Build-Fritzing-1.0.4-Windows-script-main\*.* .\
+rmdir Build-Fritzing-1.0.4-Windows-script-main
 
