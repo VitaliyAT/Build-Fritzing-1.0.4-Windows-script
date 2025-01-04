@@ -45,9 +45,9 @@ if not exist zlib.tar.gz DownloadFile https://www.zlib.net/current/zlib.tar.gz z
 
 rem https://sourceforge.net/projects/ngspice/files/ng-spice-rework/42/
 echo ngspice-42 ngspice Files
-if not exist ngspice-42.tar.gz DownloadFile https://jaist.dl.sourceforge.net/project/ngspice/ng-spice-rework/42/ngspice-42.tar.gz ngspice-42.tar.gz
+if not exist ngspice-44.tar.gz DownloadFile https://master.dl.sourceforge.net/project/ngspice/ng-spice-rework/44/ngspice-44.tar.gz ngspice-44.tar.gz
 
-if not exist ngspice-42_dll_64.7z DownloadFile https://master.dl.sourceforge.net/project/ngspice/ng-spice-rework/42/ngspice-42_dll_64.7z ngspice-42_dll_64.7z
+if not exist ngspice-44_dll_64.7z DownloadFile https://master.dl.sourceforge.net/project/ngspice/ng-spice-rework/44/ngspice-44_dll_64.7z ngspice-44_dll_64.7z
 
 rem for Fritzing 1.0.2
 rem https://kb.firedaemon.com/support/solutions/articles/4000121705
@@ -67,9 +67,9 @@ if not exist vs_BuildTools_2019.exe goto failed
 if not exist qt-unified-windows-x64-4.6.1-online.exe goto failed
 if not exist boost_1_85_0.zip goto failed
 if not exist zlib.tar.gz goto failed
-if not exist ngspice-42.tar.gz goto failed
-if not exist ngspice-42_dll_64.7z goto failed
-rem for Fritzing 1.0.2
+if not exist ngspice-44.tar.gz goto failed
+if not exist ngspice-44_dll_64.7z goto failed
+rem for Fritzing 1.0.4
 if not exist openssl-3.0.12.zip goto failed
 if not exist clipper_ver6.4.2.zip goto failed
 
@@ -83,4 +83,3 @@ echo Download Error
 echo ===
 rundll32 user32.dll,MessageBeep
 pause
-

@@ -43,7 +43,9 @@ echo     "Microsoft.VisualStudio.Component.VC.ASAN", >> VSBT_VS2019.vsconfig
 echo     "Microsoft.VisualStudio.Component.TextTemplating", >> VSBT_VS2019.vsconfig
 echo     "Microsoft.VisualStudio.Component.VC.CoreIde", >> VSBT_VS2019.vsconfig
 echo     "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core", >> VSBT_VS2019.vsconfig
-echo     "Microsoft.VisualStudio.Workload.VCTools" >> VSBT_VS2019.vsconfig
+echo     "Microsoft.VisualStudio.Workload.VCTools", >> VSBT_VS2019.vsconfig
+echo     "Microsoft.VisualStudio.Component.VC.v141.x86.x64", >> VSBT_VS2019.vsconfig
+echo     "Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre" >> VSBT_VS2019.vsconfig
 echo   ] >> VSBT_VS2019.vsconfig
 echo } >> VSBT_VS2019.vsconfig
 
@@ -52,4 +54,3 @@ vs_BuildTools_2019.exe --config %VSDIR%\VSBT_VS2019.vsconfig ^
   --norestart --passive --wait
 
 exit
-
