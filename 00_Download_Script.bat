@@ -9,23 +9,23 @@ cd \
 mkdir \00_fritzing
 cd /d \00_fritzing
 
-rem https://github.com/FREEWING-JP/CSharp_DownloadFile
+rem https://github.com/VitaliyAT/CSharp_DownloadFile
 rem echo C# DownloadFile from URL
-rem bitsadmin /TRANSFER hoge https://github.com/FREEWING-JP/CSharp_DownloadFile/releases/download/v0.0/DownloadFile.exe %cd%\DownloadFile.exe
+rem bitsadmin /TRANSFER hoge https://github.com/VitaliyAT/CSharp_DownloadFile/releases/download/v0.0/DownloadFile.exe %cd%\DownloadFile.exe
 
 echo C# DownloadFile source code from URL
-bitsadmin /TRANSFER hoge https://raw.githubusercontent.com/FREEWING-JP/CSharp_DownloadFile/main/DownloadFile.cs %cd%\DownloadFile.cs
+bitsadmin /TRANSFER hoge https://raw.githubusercontent.com/VitaliyAT/CSharp_DownloadFile/main/DownloadFile.cs %cd%\DownloadFile.cs
 
 echo Build DownloadFile.exe
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc DownloadFile.cs
 
-rem https://github.com/FREEWING-JP/CSharp_UnZip
+rem https://github.com/VitaliyAT/CSharp_UnZip
 echo C# UnZip .Net 4.5
-if not exist UnZip.exe DownloadFile https://github.com/FREEWING-JP/CSharp_UnZip/releases/download/v0.0/UnZip.exe UnZip.exe
+if not exist UnZip.exe DownloadFile https://github.com/VitaliyAT/CSharp_UnZip/releases/download/v0.0/UnZip.exe UnZip.exe
 
-rem https://github.com/FREEWING-JP/Build-Fritzing-1.0.0-Windows-script
+rem https://github.com/VitaliyAT/Build-Fritzing-1.0.0-Windows-script
 echo Build Fritzing 1.0.0 Windows script
-if not exist main.zip DownloadFile https://github.com/FREEWING-JP/Build-Fritzing-1.0.0-Windows-script/archive/refs/heads/main.zip main.zip
+if not exist main.zip DownloadFile https://github.com/VitaliyAT/Build-Fritzing-1.0.0-Windows-script/archive/refs/heads/main.zip main.zip
 
 UnZip.exe main.zip .
 
