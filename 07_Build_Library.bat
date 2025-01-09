@@ -1,3 +1,4 @@
+mode con:cols=120 lines=32766
 @echo off
 rem 07_Build_Library.bat
 rem http://www.neko.ne.jp/~freewing/software/build_fritzing_100_windows/
