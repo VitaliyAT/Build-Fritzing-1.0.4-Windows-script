@@ -13,9 +13,9 @@ http://www.neko.ne.jp/~freewing/software/build_fritzing_100_windows/
 ```
 * Open Command Prompt
 
-bitsadmin /TRANSFER hoge https://raw.githubusercontent.com/VitaliyAT/Build-Fritzing-1.0.4-Windows-script/main/00_Download_Script.bat %cd%\00_Download_Script.bat
+bitsadmin /TRANSFER hoge https://raw.githubusercontent.com/VitaliyAT/Build-Fritzing-1.0.4-Windows-script/main/_0_Download_Script.bat %cd%\00_Download_Script.bat
 
-00_Download_Script.bat
+_0_Download_Script.bat
 
 00_Execute_Script.bat
 
